@@ -43,10 +43,10 @@ c *= 5;      //50
 
 // Comparison Operators:- (returns true or false)
 
-//Loose Equality ==
+//Loose Equality ==  (Type Conversion allowed)
 5 == "5"  //true
 
-//Strict Equality ===
+//Strict Equality ===  (Type Conversion not allowed)
 5 === "5"  //false
 
 //Not equal !=
@@ -91,11 +91,11 @@ false || false  //false
 
 //Increment ++
 let d = 5;
-x++;        //6
+d++;        //6
 
 //Decrement --
 let e = 5;
-x--;        //4
+e--;        //4
 
 
 // Ternary Operators:-
@@ -108,3 +108,13 @@ let result = size >= 18 ? "Big" : "Small";  //Big
 //Nullish Coalescing ??
 console.log(null ?? "Ginger");  //Ginger
 // Returns right side only if left side is either "null" or "undefined"
+
+
+// **Important concept:-
+let x = 5;
+console.log(x++);  //This will return 5. Since x++ returns the old value 5 while updating the value of x to 6.
+
+let y = 5
+y++;
+console.log(y);  //This will return 6. Because this time we asked for the value of "y" not "y++" and value of y = 6 (after increment). And since returning value (5) of y++ is not used it will be ignored.
+
