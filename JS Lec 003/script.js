@@ -50,10 +50,10 @@ c *= 5;      //50
 5 === "5"  //false
 
 //Not equal !=
-5 != 2;  //true
+5 != "5";  //false
 
 //Strict not equal !==
-5 !== "5";  //false
+5 !== "5";  //true
 
 //Greater than
 5 > 2;  //true
@@ -116,5 +116,5 @@ console.log(x++);  //This will return 5. Since x++ returns the old value 5 while
 
 let y = 5
 y++;
-console.log(y);  //This will return 6. Because this time we asked for the value of "y" not "y++" and value of y = 6 (after increment). And since returning value (5) of y++ is not used it will be ignored.
+console.log(y);  //This will return 6. Because this time we asked for the value of "y" not "y++" and value of y = 6 (after increment). And since returning value (5) of y++ is not used or stored it will be ignored.
 

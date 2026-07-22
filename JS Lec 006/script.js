@@ -20,8 +20,8 @@ if (score >= 90) {
 else if (score >= 70) {
     console.log("B");
 }
-else if (score >= 60) {      //Important Rule:- JavaScript stops after first true condition...  (So even when this statement is true it won't run)
-    console.log("C")
+else if (score >= 60) {      //Important Rule:- JavaScript stops after first true condition but is only true for 'if, else if connected chain'...  (So even when this statement is true it won't run)
+    console.log("C")         // Note:- If there are multiple 'If' instead of 'else if' JS checks every 'If' statement individually even after first 'if' is true it will continue till last 'if'.
 }
 else {
     console.log("D");
@@ -34,7 +34,7 @@ let day = 2;
 switch(day) {
     case 1: 
         console.log("Monday");
-        break;                        //break is very important since it tells JS to exactly stop where and exit switch.
+        break;                        //break is very important since it tells JS to exactly where to stop and exit switch.
 
     case 2:
         console.log("Tuesday");

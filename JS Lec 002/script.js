@@ -53,7 +53,7 @@ let g = ["Boa Hancock", 'Nico Robin', "Shirahoshi"];
 console.log(typeof g);    //This is the catch. JS treats arrays as objects so it will also return as object.
 
 function Nami() {
-    console.log("Nami");
+    console.log("Nico Robin");
 }
 console.log(typeof Nami);
 
@@ -61,3 +61,6 @@ console.log(typeof Nami);
 //JavaScript later aaded a special method to check arrays properly:-
 let i = ["Hancock", "Robin", "Shirahoshi"];
 console.log(Array.isArray(i));  //Answer will be in true/false since it's a boolean way of checking the particular data type.
+
+let l = null;
+console.log(typeof l);   // It will also return as the object.

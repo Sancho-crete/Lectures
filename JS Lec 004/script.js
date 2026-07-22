@@ -43,13 +43,13 @@ console.log(d.length);  //Note:- Spaces are also counted as the length of the st
 //.toUpperCase()  as name suggest it converts the string to uppercase
 
 let e = "zoro";
-console.log(e.toUpperCase);
+console.log(e.toUpperCase());
 
 
 //.toLowerCase()  converts the strings to lowercase
 
 let f = "FUBUKI"
-console.log(f.toLowerCase);
+console.log(f.toLowerCase());
 
 //Note:- Methods like these do not change the original string.
 //Example:-

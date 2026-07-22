@@ -22,16 +22,14 @@ console.log(year);
 // There are three keywords of variable in JS:-
 
 //let
-let name = "Hancock";
+let character = "Hancock";
 // variable value can be changed later...
-name = "Nico Robin";
-console.log(name);
+character = "Nico Robin";
+console.log(character);
 
 //const
 const pi = 3.14;  //Const must be declared and initialized together.
-// variable value won't change and throws error...
-pi = 24;
-console.log(pi);
+// since variable value won't change and throws error...
 
 //var
 var phase = "first";
@@ -44,3 +42,20 @@ let name = "a";
 let Name = "b";
 let NAME = "c";
 // These all are different variables since as mentioned JS is a case-sensitive language.
+
+//var is not a block scope variable which is known as Global scope. Entire Window is the Global Scope. EX-
+{
+var ab = "HEllo";
+}
+console.log(ab); //we can access var even outside the block.
+
+//let and const is a block scoped variable since we can't access let and const outside the block. It will throw error. EX-
+{
+    let bc = "kaise ho";
+    const cd = "Thik ba";
+
+    console.log(bc);
+    console.log(cd);
+}
+
+console.log(window);
